@@ -184,6 +184,7 @@ model = keras.Sequential([
 ### 4. Создание и настройка модели
 
 ```python
+optimizer = keras.optimizers.Adam(learning_rate=0.001)
 model.compile(
     optimizer=optimizer,
     loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
@@ -191,6 +192,7 @@ model.compile(
 ```
 
 **Параметры:**
+- `learning_rate=0.001`: Регулировка скорости обучения.
 - `optimizer=optimizer`: Оптимизатор, используемый для обучения модели. В данном случае используется `Adam`.
 - `loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True)`: Функция потерь для многоклассовой классификации с использованием меток в виде целых чисел (не one-hot encoded).
 - `metrics=['accuracy']`: Метрика для оценки точности модели.
