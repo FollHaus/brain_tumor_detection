@@ -289,7 +289,7 @@ plt.show()
 ```
 
 - Отображаем изображения с их истинными и предсказанными метками.
-- 
+  
 ![image](https://github.com/user-attachments/assets/a0d7f1a9-3322-40bb-9f44-f866b03454e7)
 
 ---
